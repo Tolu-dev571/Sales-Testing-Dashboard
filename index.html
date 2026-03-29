@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sales Dashboard Test</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+           <h1>Sales Dashboard</h1>
+           <P>My portfolio showcasing a sales Dashboard for testing purpose</P>
+        </header>
+        <main>
+        <section class="metrics">
+
+            <div class="card">
+                 <h3>Total Revenue</h3>
+                 <P id="totalRevenue">$0</P>
+            </div>
+
+            <div class="card">
+                <h3>Deals Won</h3>
+                <P id="dealsWon"></P>
+            </div>
+
+            <div class="card">
+                <h3>Conversion Rate</h3>
+                <p id="conversionRate">0%</p>
+            </div>
+        </section>
+            
+        <section class="form-container">
+            <h2>Add New Sales</h2>
+            <form id="salesForm">
+                <input type="text" id="client" placeholder="Client Name" required>
+                <input type="number" id="dealValue" placeholder="Deal Value ($)" min="1" required>
+                <select id="status" required>
+                    <option value="">Sales Status</option>
+                    <option value="Won">Won</option>
+                    <option value="Lost">Lost</option>
+                </select>                    
+                <button type="submit">Add Sales</button> 
+            </form>
+        </section>
+        
+        <section class="table-section">
+            <h2>Sales Records</h2>
+            <table id="salesTable">
+                <thead>
+                    <tr>
+                        <th>Client</th>
+                        <th>Deal Value ($)</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </section>
+        </main>
+
+         <footer class="site-footer">
+        <p>&copy; 2026 Adeniji Tolu. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a> |
+            <a href="#">Security</a> |
+            <a href="#">Status</a> |
+            <a href="#">Community</a> 
+        </p>
+       </footer>
+    <script src="script.js"></script>    
+    </body>
+</html>
